@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Book Lib</string>
+    <string name="name" translatable="false">Enter name</string>
+    <string name="autor" translatable="false">Enter autor</string>
+    <string name="year" translatable="false">Enter year</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="enter_year" translatable="false">enter_year</string>
+    <string name="enter_autor" translatable="false">enter_autor</string>
+    <string name="enter_name" translatable="false" />
+    <string name="Enter_name" translatable="false" />
+    <string name="Enter_naming" translatable="false">enter_name</string>
+</resources>

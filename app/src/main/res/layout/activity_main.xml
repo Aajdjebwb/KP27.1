@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.pr27.main_activity.MainActivityBookViewModel" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context="Kom.PR27.main_activity.MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="vertical"
+            app:adapter="@{viewModel.recyclerViewAdapter}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <!-- Use the correct IDs in your layout for TextViews -->
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Name"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/Autor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Autor"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Year"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</layout>
